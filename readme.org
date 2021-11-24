@@ -1,0 +1,58 @@
+#+TITLE: Readme for my dwm config
+#+DESCRIPTION: readme to documentate my dwm config
+
+* What is dwm?
+** dwm is a tiling window manager for x windowing system written in c
+it was originally made by the suckless community with a sample config
+file by the name of config.def.h that included default keybindings
+and other essential things
+** dwm has been modified by the community to include different functions
+for example, the dwm by luke smith includes his configurations, the dwm
+by distrotube includes his configurations and so on.
+* Advantages of using dwm over anything else.
+** dwm is source based
+so you have to compile it after you edit the config file. this is where
+the advantage comes into play, because you directly edit the source
+code, you don't have to manage a dotfiles repo, just upload your dwm
+files, then you or a person on another machine can clone it
+run a "make" and "sudo make install" to get your config on their
+machine!
+** so easy even caveman could do it!
+dwm is really easy, even someone who does not give a fuck about c can
+easily configure it because the code is well documented and laid out
+for example changing the color includes a comment and so on.
+* How to install dwm?
+** installing dwm is easier than ever all you have to do
+is to get the dwm source from git.suckless.org/dwm
+on arch linux you need the libx11 and libxft pacakges as well as base-devel and make
+* all about my dwm config!
+
+** starting my dwm config
+there is no special stuff at the beginneing
+
+it is just standard stuff, i just changed the default "mod key" to super from alt
+
+the default color scheme for the panel at the top is #304acf which is also known as dark blue but a little light
+** the entire theme of the system
+the entire theme of my system represents the "doom one " color scheme that is in doom emacs
+when i use doom emacs for the first time, i really liked the color scheme and implemented it in my system.
+* PATCHES THAT ARE APPLIED IN MY DWM.C FILE:
+
+** these are very very essential patches and some nonsense stuff.
+
+*** dwm-alphasystray
+dwm-autostart
+dwm-center
+dwm-r1615-selfstart
+dwm-cyclelayouts
+dwm-shiftview
+dwm-fullgaps
+dwm-gridmode (#include "layouts.c" above layouts to work, gaps does not work in this layout)
+dwm-viewontag
+
+* some important things to keep in mind:
+** my dwm config requires somethings to run properly
+    it needs fontawesome which is a emoji font to display the icons in the panel on the top, it also needs trayer
+    a systray widget for tilling window managers
+    aswell as this one is not essential but i recommend you to keep this as backup if your dwm config breaks and that is
+    a backup.
